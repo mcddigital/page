@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCD Digital - Marketing Digital</title>
+    <meta name="description" content="Criamos presença digital moderna para profissionais e empresas que desejam se posicionar com autoridade, atrair clientes e vender mais.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime-400': '#84ff00',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ::selection {
+            background-color: #84ff00;
+            color: #031d12;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#031d12] text-white">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(132,255,0,0.16),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(132,255,0,0.08),transparent_20%)]"></div>
+
+        <div class="relative mx-auto max-w-7xl px-6 py-8 lg:px-10">
+            <!-- Header -->
+            <header class="flex flex-col gap-6 rounded-[2rem] border border-white/10 bg-white/5 px-8 py-6 backdrop-blur-md sm:flex-row sm:items-center sm:justify-between">
+                <div class="flex items-center justify-center sm:justify-start">
+                    <img src="mcd.png" alt="MCD Digital" class="h-16 sm:h-14 object-contain">
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-3 sm:justify-end">
+                    <a href="https://www.instagram.com/mcd.marketingdigital" target="_blank" rel="noreferrer" class="flex items-center justify-center rounded-full border border-white/15 bg-white/5 p-2.5 sm:px-6 sm:py-2.5 text-sm font-semibold text-white transition hover:bg-white/10">
+                        <svg class="h-5 w-5 sm:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        <span class="hidden sm:inline">Instagram</span>
+                    </a>
+                    <a href="#contato" class="rounded-full bg-[#84ff00] px-6 py-2.5 text-sm font-semibold text-[#052015] transition hover:scale-[1.02]">
+                        Solicitar proposta
+                    </a>
+                </div>
+            </header>
+
+            <!-- Hero Content -->
+            <div class="grid items-center gap-14 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:py-28">
+                <div>
+                    <div class="mb-6 inline-flex items-center rounded-full border border-[#84ff00]/20 bg-[#84ff00]/10 px-4 py-2 text-sm text-lime-300">
+                        Marketing digital com identidade, estratégia e resultado
+                    </div>
+
+                    <h1 class="max-w-4xl text-5xl font-semibold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl">
+                        Sua marca precisa ser <span class="text-[#84ff00]">vista</span>, lembrada e escolhida.
+                    </h1>
+
+                    <p class="mt-6 max-w-2xl text-lg leading-8 text-white/75 md:text-xl">
+                        Criamos presença digital moderna para profissionais e empresas que desejam se posicionar com autoridade, atrair clientes e vender mais.
+                    </p>
+
+                    <div class="mt-10 flex flex-wrap gap-4">
+                        <a href="#servicos" class="rounded-full bg-[#84ff00] px-6 py-3 text-sm font-semibold text-[#052015] shadow-2xl shadow-lime-500/20 transition hover:-translate-y-0.5">
+                            Ver serviços
+                        </a>
+                        <a href="#nichos" class="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                            Público ideal
+                        </a>
+                    </div>
+
+                    <div class="mt-12 grid max-w-2xl gap-4 sm:grid-cols-3">
+                        <div class="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+                            <p class="text-3xl font-semibold text-[#84ff00]">+Marca</p>
+                            <p class="mt-2 text-sm text-white/70">Posicionamento visual e estratégico</p>
+                        </div>
+                        <div class="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+                            <p class="text-3xl font-semibold text-[#84ff00]">+Alcance</p>
+                            <p class="mt-2 text-sm text-white/70">Campanhas para gerar visibilidade</p>
+                        </div>
+                        <div class="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+                            <p class="text-3xl font-semibold text-[#84ff00]">+Clientes</p>
+                            <p class="mt-2 text-sm text-white/70">Comunicação focada em conversão</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -inset-6 rounded-[2rem] bg-[#84ff00]/10 blur-3xl"></div>
+
+                    <div class="relative overflow-hidden rounded-[2rem] border border-[#84ff00]/20 bg-gradient-to-br from-white/10 to-white/5 p-6 shadow-2xl backdrop-blur-xl">
+                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(132,255,0,0.12),transparent_55%)]"></div>
+                        <div class="relative flex min-h-[420px] items-center justify-center rounded-[1.75rem] border border-white/10 bg-[#082517]/80 p-8 animate-float">
+                            <img src="mcd2.png" alt="Logo MCD Digital em destaque" class="max-h-[220px] w-full max-w-[520px] object-contain drop-shadow-[0_0_30px_rgba(132,255,0,0.12)]">
+                        </div>
+
+                        <div class="relative mt-5 grid gap-4 sm:grid-cols-2">
+                            <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-5">
+                                <p class="text-sm text-white/55">Foco</p>
+                                <p class="mt-2 text-lg font-medium">Presença digital profissional</p>
+                            </div>
+                            <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-5">
+                                <p class="text-sm text-white/55">Objetivo</p>
+                                <p class="mt-2 text-lg font-medium">Mais autoridade e captação</p>
+                            </div>
+                            <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-5 sm:col-span-2">
+                                <p class="text-sm text-white/55">Especialidade</p>
+                                <p class="mt-2 text-lg font-medium text-[#84ff00]">
+                                    Identidade visual, campanhas, posts, logo e busca de clientes
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+        <div class="mb-12 max-w-2xl">
+            <p class="text-sm uppercase tracking-[0.3em] text-[#84ff00]">Serviços</p>
+            <h2 class="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                Soluções criativas para construir marca, presença e resultado.
+            </h2>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div class="group rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#84ff00]/30 hover:bg-white/[0.06]">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20">
+                    <svg class="h-6 w-6 text-[#84ff00]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-white">Identidade Visual</h3>
+                <p class="mt-4 leading-7 text-white/70">Construção de marcas fortes, coerentes e memoráveis, com direção visual estratégica para posicionar sua empresa no digital.</p>
+            </div>
+
+            <div class="group rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#84ff00]/30 hover:bg-white/[0.06]">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20">
+                    <svg class="h-6 w-6 text-[#84ff00]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-white">Logos e Marca</h3>
+                <p class="mt-4 leading-7 text-white/70">Criação de logo, universo visual e linguagem de marca com estética moderna, profissional e pensada para gerar autoridade.</p>
+            </div>
+
+            <div class="group rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#84ff00]/30 hover:bg-white/[0.06]">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20">
+                    <svg class="h-6 w-6 text-[#84ff00]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-white">Posts e Conteúdo</h3>
+                <p class="mt-4 leading-7 text-white/70">Design de posts criativos, peças promocionais e materiais visuais para fortalecer sua presença nas redes sociais.</p>
+            </div>
+
+            <div class="group rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#84ff00]/30 hover:bg-white/[0.06]">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20">
+                    <svg class="h-6 w-6 text-[#84ff00]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-white">Campanhas Digitais</h3>
+                <p class="mt-4 leading-7 text-white/70">Campanhas inteligentes para atrair, conectar e converter, com foco em crescimento, posicionamento e resultado real.</p>
+            </div>
+
+            <div class="group rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#84ff00]/30 hover:bg-white/[0.06]">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20">
+                    <svg class="h-6 w-6 text-[#84ff00]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-white">Impulsionamento de Vendas</h3>
+                <p class="mt-4 leading-7 text-white/70">Estratégias para ampliar alcance, gerar mais oportunidades e transformar tráfego em contatos qualificados e vendas.</p>
+            </div>
+
+            <div class="group rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#84ff00]/30 hover:bg-white/[0.06]">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20">
+                    <svg class="h-6 w-6 text-[#84ff00]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-white">Busca de Clientes</h3>
+                <p class="mt-4 leading-7 text-white/70">Planejamento de ações para captação de leads, presença local, autoridade profissional e atração do público certo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section id="nichos" class="border-y border-white/10 bg-white/[0.03]">
+        <div class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+            <div class="mb-12 max-w-3xl">
+                <p class="text-sm uppercase tracking-[0.3em] text-[#84ff00]">Público-alvo</p>
+                <h2 class="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                    Segmentos que precisam transmitir confiança e vender com imagem profissional.
+                </h2>
+                <p class="mt-6 max-w-2xl text-lg leading-8 text-white/70">
+                    Destacamos seu negócio com uma comunicação visual forte, estratégica e adaptada ao perfil do seu público.
+                </p>
+            </div>
+
+            <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                <!-- Advogados -->
+                <div class="group overflow-hidden rounded-[2rem] border border-white/10 bg-[#082517] p-6 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:border-[#84ff00]/30 hover:shadow-2xl hover:shadow-[#84ff00]/20">
+                    <div class="mb-5 flex h-48 items-end justify-between rounded-[1.5rem] border border-[#84ff00]/10 bg-[linear-gradient(180deg,rgba(115,255,0,0.14),rgba(3,29,18,0.2))] p-5 transition-all duration-500">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.25em] text-white/45 transition-colors group-hover:text-[#84ff00]/70">segmento</p>
+                            <h3 class="mt-2 text-2xl font-semibold text-white transition-colors group-hover:text-[#84ff00]">Advogados</h3>
+                        </div>
+                        <div class="rounded-3xl bg-[#84ff00]/10 p-4 ring-1 ring-[#84ff00]/20 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-[#84ff00]">
+                            <svg class="h-10 w-10 text-[#84ff00] transition-colors group-hover:text-[#031d12]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 13-1 8.5a.5.5 0 0 1-1 0L11 13"/><path d="m5.5 10.5 3.5-3 3.5 3"/><path d="m8 18 1.5-5.5"/><path d="M18 11V6"/><path d="m3 11 15 0"/></svg>
+                        </div>
+                    </div>
+                    <p class="leading-7 text-white/70 transition-colors duration-500 group-hover:text-white/90">Presença séria, estratégica e confiável para fortalecer autoridade e atrair novos clientes.</p>
+                </div>
+
+                <!-- Dentistas -->
+                <div class="group overflow-hidden rounded-[2rem] border border-white/10 bg-[#082517] p-6 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:border-[#84ff00]/30 hover:shadow-2xl hover:shadow-[#84ff00]/20">
+                    <div class="mb-5 flex h-48 items-end justify-between rounded-[1.5rem] border border-[#84ff00]/10 bg-[linear-gradient(180deg,rgba(115,255,0,0.14),rgba(3,29,18,0.2))] p-5 transition-all duration-500">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.25em] text-white/45 transition-colors group-hover:text-[#84ff00]/70">segmento</p>
+                            <h3 class="mt-2 text-2xl font-semibold text-white transition-colors group-hover:text-[#84ff00]">Dentistas</h3>
+                        </div>
+                        <div class="rounded-3xl bg-[#84ff00]/10 p-4 ring-1 ring-[#84ff00]/20 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-[#84ff00]">
+                            <svg class="h-10 w-10 text-[#84ff00] transition-colors group-hover:text-[#031d12]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+                        </div>
+                    </div>
+                    <p class="leading-7 text-white/70 transition-colors duration-500 group-hover:text-white/90">Marca sofisticada e campanhas de conversão para evidenciar cuidado, estética e confiança.</p>
+                </div>
+
+                <!-- Psicólogos -->
+                <div class="group overflow-hidden rounded-[2rem] border border-white/10 bg-[#082517] p-6 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:border-[#84ff00]/30 hover:shadow-2xl hover:shadow-[#84ff00]/20">
+                    <div class="mb-5 flex h-48 items-end justify-between rounded-[1.5rem] border border-[#84ff00]/10 bg-[linear-gradient(180deg,rgba(115,255,0,0.14),rgba(3,29,18,0.2))] p-5 transition-all duration-500">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.25em] text-white/45 transition-colors group-hover:text-[#84ff00]/70">segmento</p>
+                            <h3 class="mt-2 text-2xl font-semibold text-white transition-colors group-hover:text-[#84ff00]">Psicólogos</h3>
+                        </div>
+                        <div class="rounded-3xl bg-[#84ff00]/10 p-4 ring-1 ring-[#84ff00]/20 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-[#84ff00]">
+                            <svg class="h-10 w-10 text-[#84ff00] transition-colors group-hover:text-[#031d12]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                        </div>
+                    </div>
+                    <p class="leading-7 text-white/70 transition-colors duration-500 group-hover:text-white/90">Identidade acolhedora e elegante para transmitir sensibilidade, ética e profissionalismo.</p>
+                </div>
+
+                <!-- Contadores -->
+                <div class="group overflow-hidden rounded-[2rem] border border-white/10 bg-[#082517] p-6 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:border-[#84ff00]/30 hover:shadow-2xl hover:shadow-[#84ff00]/20">
+                    <div class="mb-5 flex h-48 items-end justify-between rounded-[1.5rem] border border-[#84ff00]/10 bg-[linear-gradient(180deg,rgba(115,255,0,0.14),rgba(3,29,18,0.2))] p-5 transition-all duration-500">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.25em] text-white/45 transition-colors group-hover:text-[#84ff00]/70">segmento</p>
+                            <h3 class="mt-2 text-2xl font-semibold text-white transition-colors group-hover:text-[#84ff00]">Contadores</h3>
+                        </div>
+                        <div class="rounded-3xl bg-[#84ff00]/10 p-4 ring-1 ring-[#84ff00]/20 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-[#84ff00]">
+                            <svg class="h-10 w-10 text-[#84ff00] transition-colors group-hover:text-[#031d12]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="10" x="2" y="3" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/><path d="M2 17h20"/></svg>
+                        </div>
+                    </div>
+                    <p class="leading-7 text-white/70 transition-colors duration-500 group-hover:text-white/90">Comunicação clara e profissional para destacar serviços, confiança e organização da marca.</p>
+                </div>
+
+                <!-- Nutricionistas -->
+                <div class="group overflow-hidden rounded-[2rem] border border-white/10 bg-[#082517] p-6 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:border-[#84ff00]/30 hover:shadow-2xl hover:shadow-[#84ff00]/20">
+                    <div class="mb-5 flex h-48 items-end justify-between rounded-[1.5rem] border border-[#84ff00]/10 bg-[linear-gradient(180deg,rgba(115,255,0,0.14),rgba(3,29,18,0.2))] p-5 transition-all duration-500">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.25em] text-white/45 transition-colors group-hover:text-[#84ff00]/70">segmento</p>
+                            <h3 class="mt-2 text-2xl font-semibold text-white transition-colors group-hover:text-[#84ff00]">Nutricionistas</h3>
+                        </div>
+                        <div class="rounded-3xl bg-[#84ff00]/10 p-4 ring-1 ring-[#84ff00]/20 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-[#84ff00]">
+                            <svg class="h-10 w-10 text-[#84ff00] transition-colors group-hover:text-[#031d12]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        </div>
+                    </div>
+                    <p class="leading-7 text-white/70 transition-colors duration-500 group-hover:text-white/90">Visual leve, moderno e humanizado para conectar saúde, bem-estar e credibilidade.</p>
+                </div>
+
+                <!-- Clínicas -->
+                <div class="group overflow-hidden rounded-[2rem] border border-white/10 bg-[#082517] p-6 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:border-[#84ff00]/30 hover:shadow-2xl hover:shadow-[#84ff00]/20">
+                    <div class="mb-5 flex h-48 items-end justify-between rounded-[1.5rem] border border-[#84ff00]/10 bg-[linear-gradient(180deg,rgba(115,255,0,0.14),rgba(3,29,18,0.2))] p-5 transition-all duration-500">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.25em] text-white/45 transition-colors group-hover:text-[#84ff00]/70">segmento</p>
+                            <h3 class="mt-2 text-2xl font-semibold text-white transition-colors group-hover:text-[#84ff00]">Clínicas e demais profissionais</h3>
+                        </div>
+                        <div class="rounded-3xl bg-[#84ff00]/10 p-4 ring-1 ring-[#84ff00]/20 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-[#84ff00]">
+                            <svg class="h-10 w-10 text-[#84ff00] transition-colors group-hover:text-[#031d12]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"/></svg>
+                        </div>
+                    </div>
+                    <p class="leading-7 text-white/70 transition-colors duration-500 group-hover:text-white/90">Estratégia visual e digital para ampliar alcance, fortalecer reputação e gerar agendamentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+        <div class="mb-12 max-w-2xl">
+            <p class="text-sm uppercase tracking-[0.3em] text-[#84ff00]">Como funciona</p>
+            <h2 class="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                Um processo simples, estratégico e criativo.
+            </h2>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6">
+                <p class="text-5xl font-semibold text-[#84ff00]/90">01</p>
+                <h3 class="mt-5 text-2xl font-semibold">Diagnóstico</h3>
+                <p class="mt-4 leading-7 text-white/70">Entendemos sua marca, seu mercado e o perfil do cliente que você deseja alcançar.</p>
+            </div>
+
+            <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6">
+                <p class="text-5xl font-semibold text-[#84ff00]/90">02</p>
+                <h3 class="mt-5 text-2xl font-semibold">Estratégia</h3>
+                <p class="mt-4 leading-7 text-white/70">Definimos a melhor direção visual e digital para posicionar seu negócio com clareza.</p>
+            </div>
+
+            <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6">
+                <p class="text-5xl font-semibold text-[#84ff00]/90">03</p>
+                <h3 class="mt-5 text-2xl font-semibold">Criação</h3>
+                <p class="mt-4 leading-7 text-white/70">Desenvolvemos peças, campanhas e presença digital com estética premium e foco em conversão.</p>
+            </div>
+
+            <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6">
+                <p class="text-5xl font-semibold text-[#84ff00]/90">04</p>
+                <h3 class="mt-5 text-2xl font-semibold">Crescimento</h3>
+                <p class="mt-4 leading-7 text-white/70">Ajustamos a comunicação para fortalecer marca, atrair clientes e gerar novas oportunidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="mx-auto max-w-7xl px-6 pb-20 lg:px-10">
+        <div class="mb-16 text-center">
+            <p class="text-sm uppercase tracking-[0.3em] text-[#84ff00]">Contato</p>
+            <h2 class="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                Vamos transformar sua presença digital em uma <span class="text-[#84ff00]">marca que vende</span>
+            </h2>
+            <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/75">
+                Fale com a MCD Digital e solicite uma proposta para sua marca, seus posts, suas campanhas e sua estratégia de captação de clientes.
+            </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+            <a href="https://wa.me/5589994124866" target="_blank" rel="noreferrer" class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#84ff00]/30">
+                <div class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-[#84ff00]/10 blur-2xl transition group-hover:bg-[#84ff00]/20"></div>
+                <div class="relative">
+                    <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20 transition group-hover:scale-110 group-hover:bg-[#84ff00]">
+                        <svg class="h-8 w-8 text-[#84ff00] transition group-hover:text-[#031d12]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-white/50">WhatsApp</p>
+                    <p class="mt-2 text-xl font-semibold text-white">(89) 99941-2866</p>
+                    <p class="mt-3 text-sm text-white/60">Atendimento rápido e direto</p>
+                    <div class="mt-6 flex items-center gap-2 text-[#84ff00]">
+                        <span class="text-sm font-semibold">Enviar mensagem</span>
+                        <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/mcd.marketingdigital" target="_blank" rel="noreferrer" class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#84ff00]/30">
+                <div class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-[#84ff00]/10 blur-2xl transition group-hover:bg-[#84ff00]/20"></div>
+                <div class="relative">
+                    <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20 transition group-hover:scale-110 group-hover:bg-[#84ff00]">
+                        <svg class="h-8 w-8 text-[#84ff00] transition group-hover:text-[#031d12]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-white/50">Instagram</p>
+                    <p class="mt-2 text-xl font-semibold text-white">@mcd.marketingdigital</p>
+                    <p class="mt-3 text-sm text-white/60">Portfólio e cases de sucesso</p>
+                    <div class="mt-6 flex items-center gap-2 text-[#84ff00]">
+                        <span class="text-sm font-semibold">Seguir agora</span>
+                        <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="mailto:marketing.mcddigital@gmail.com" class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#84ff00]/30">
+                <div class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-[#84ff00]/10 blur-2xl transition group-hover:bg-[#84ff00]/20"></div>
+                <div class="relative">
+                    <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20 transition group-hover:scale-110 group-hover:bg-[#84ff00]">
+                        <svg class="h-8 w-8 text-[#84ff00] transition group-hover:text-[#031d12]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-white/50">Email</p>
+                    <p class="mt-2 text-xl font-semibold text-white">marketing.mcddigital@gmail.com</p>
+                    <p class="mt-3 text-sm text-white/60">Para propostas formais</p>
+                    <div class="mt-6 flex items-center gap-2 text-[#84ff00]">
+                        <span class="text-sm font-semibold">Enviar email</span>
+                        <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="mt-12 overflow-hidden rounded-[2.5rem] border border-[#84ff00]/20 bg-gradient-to-br from-[#84ff00]/10 via-white/[0.04] to-white/[0.02] p-8 md:p-12">
+            <div class="flex flex-col items-center gap-6 text-center lg:flex-row lg:justify-between lg:text-left">
+                <div class="flex items-center gap-4">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#84ff00]/10 ring-1 ring-[#84ff00]/20">
+                        <svg class="h-8 w-8 text-[#84ff00]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-sm uppercase tracking-[0.2em] text-white/50">Atendimento especializado</p>
+                        <p class="text-2xl font-semibold text-white">Branding, design e performance</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://wa.me/5589994124866" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full bg-[#84ff00] px-6 py-3 text-sm font-semibold text-[#052015] shadow-lg shadow-[#84ff00]/20 transition hover:scale-105">
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Solicitar Proposta
+                    </a>
+                    <a href="https://www.instagram.com/mcd.marketingdigital" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        Ver Portfólio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
